@@ -17,6 +17,7 @@
 # In ra đúng dòng chữ:
 #   Xin chào, thế giới!
 # Viết code ở đây:
+print("Xin chào, thế giới!")
 
 
 
@@ -26,6 +27,9 @@
 #   Mục tiêu: trở thành AI Engineer.
 #   Bắt đầu: 06/10/2026
 # Viết code ở đây:
+print("Tôi đang học Python.")
+print("Mục tiêu: trở thành AI Engineer.")
+print("Bắt đầu: 06/10/2026")
 
 
 
@@ -36,6 +40,9 @@
 # Gợi ý: print("Tôi học", ngon_ngu, ...) — print tự thêm dấu cách giữa các phần.
 #        Chú ý dấu chấm cuối câu dính liền chữ CS50P.
 # Viết code ở đây:
+ngon_ngu = "Python"
+khoa_hoc = "CS50P"
+print("Tôi học",ngon_ngu,"qua khóa",khoa_hoc + ".")
 
 
 
@@ -44,7 +51,8 @@
 #   Xin chào, <tên>!
 # Ví dụ người dùng gõ Lan  →  in ra  Xin chào, Lan!
 # Viết code ở đây:
-
+ten = input("Tên bạn là gì? ")
+print("Xin chào, " + ten + "!")
 
 
 # ===== BÀI 5 =====
@@ -52,6 +60,9 @@
 #   <tên> đến từ <quê>.
 # Ví dụ: Lan, Bắc Ninh  →  Lan đến từ Bắc Ninh.
 # Viết code ở đây:
+ten = input("Tên: ")
+que = input("Quê: ")
+print(ten, "đến từ", que + ".")
 
 
 
@@ -61,6 +72,7 @@
 #   2026-10-06
 # Gợi ý: print("a", "b", sep="?")
 # Viết code ở đây:
+print("2026","10","06", sep="-")
 
 
 
@@ -72,15 +84,19 @@
 #   phở
 # Gợi ý: cần một biến tạm, hoặc tìm cách viết  a, b = b, a
 # Viết code ở đây:
-
-
+mon_1 = "phở"
+mon_2 = "bún chả"
+mon_1,mon_2 = mon_2,mon_1
+print(mon_1)
+print(mon_2)
 
 # ===== BÀI 8 =====
 # Hỏi món ăn yêu thích bằng input("Món yêu thích: ") rồi dùng f-string để in:
 #   Món yêu thích của tôi là <món>.
 # Gợi ý: print(f"...{mon}...")
 # Viết code ở đây:
-
+mon = input("Món ăn yêu thích: ")
+print(f"Món yêu thích của tôi là {mon}.")
 
 
 # ===== BÀI 9 =====
@@ -89,7 +105,8 @@
 #   Xin chào, Lê Quang Anh
 # (không có dấu chấm than ở cuối)
 # Viết code ở đây:
-
+name = input("Họ tên: ").strip().title()
+print(f"Xin chào, {name}")
 
 
 # ===== BÀI 10 · THỬ THÁCH =====
@@ -99,5 +116,7 @@
 #   ====================
 # Dòng trên và dưới là 20 dấu "=". Thử viết gọn bằng  "=" * 20
 # Viết code ở đây:
-
-
+name = input("Tên: ")
+print("="*20)
+print(f"Học viên: {name}")
+print("="*20)
