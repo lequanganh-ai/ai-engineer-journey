@@ -42,7 +42,7 @@ print("Bắt đầu: 06/10/2026")
 # Viết code ở đây:
 ngon_ngu = "Python"
 khoa_hoc = "CS50P"
-print("Tôi học",ngon_ngu,"qua khóa",khoa_hoc + ".")
+print("Tôi học", ngon_ngu,"qua khóa", khoa_hoc + ".")
 
 
 
@@ -52,7 +52,7 @@ print("Tôi học",ngon_ngu,"qua khóa",khoa_hoc + ".")
 # Ví dụ người dùng gõ Lan  →  in ra  Xin chào, Lan!
 # Viết code ở đây:
 ten = input("Tên bạn là gì? ")
-print("Xin chào, " + ten + "!")
+print("Xin chào, "+ ten + "!")
 
 
 # ===== BÀI 5 =====
@@ -62,7 +62,7 @@ print("Xin chào, " + ten + "!")
 # Viết code ở đây:
 ten = input("Tên: ")
 que = input("Quê: ")
-print(ten, "đến từ", que + ".")
+print(ten,"đến từ",que + ".")
 
 
 
@@ -86,7 +86,7 @@ print("2026","10","06", sep="-")
 # Viết code ở đây:
 mon_1 = "phở"
 mon_2 = "bún chả"
-mon_1,mon_2 = mon_2,mon_1
+mon_1,mon_2=mon_2,mon_1
 print(mon_1)
 print(mon_2)
 
@@ -116,7 +116,9 @@ print(f"Xin chào, {name}")
 #   ====================
 # Dòng trên và dưới là 20 dấu "=". Thử viết gọn bằng  "=" * 20
 # Viết code ở đây:
-name = input("Tên: ")
-print("="*20)
-print(f"Học viên: {name}")
-print("="*20)
+ten = input("Tên: ")
+print("=" * 20)
+print(f"Học viên: {ten}")
+print("=" * 20)
+
+
