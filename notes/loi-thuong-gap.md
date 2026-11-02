@@ -170,3 +170,45 @@ Dùng **checklist cuối file** trước khi chạy máy chấm.
 
 ### "Đã thử thêm" phải thật
 - Ghi giá trị ĐỀ KHÔNG CHO (7, 12 là ví dụ của đề → không tính) và kết quả THẬT sự chạy ra (đã ghi `12 → "1"` trong khi thật là "2")
+
+---
+
+## ⭐ QUY TẮC: HẸP TRƯỚC, RỘNG SAU (thêm 02/11/2026)
+
+Khi một điều kiện **nằm trong** điều kiện khác → điều kiện **HẸP** phải đứng **TRƯỚC**.
+
+| Hẹp (đứng trước) | Rộng (đứng sau) | Vì sao |
+|---|---|---|
+| `startswith("/help")` | `startswith("/")` | mọi "/help" đều bắt đầu bằng "/" |
+| `startswith("hello")` | `startswith("h")` | mọi "hello" đều bắt đầu bằng "h" |
+| `diem >= 9` | `diem >= 8` | mọi điểm ≥ 9 đều ≥ 8 |
+| chia hết cho 3 VÀ 5 | chia hết cho 3 | FizzBuzz |
+
+Ví dụ đời thường: hỏi "có phải giám đốc?" TRƯỚC "có phải nhân viên?" — vì giám đốc cũng là nhân viên.
+
+- **Bằng chứng:** câu 6 kiểm tra buổi 3 (02/11): `if t.startswith("/")` đứng trước `/help` → "/help" ra "Lệnh"
+- **Tự kiểm tra:** với mỗi cặp if/elif, hỏi "có giá trị nào thỏa CẢ HAI không?" → nếu có, cái hẹp hơn lên trước
+
+## "Đã thử thêm" phải là kết quả MÀN HÌNH, không phải kết quả MONG ĐỢI
+- **Bằng chứng:** câu 6 ghi `/help → Trợ giúp` trong khi chạy thật ra "Lệnh"
+- **Sửa:** chạy xong, copy đúng chữ terminal in ra vào dòng đó
+
+---
+
+## NHÓM H+ · BUỔI 4 TUẦN 2 (02/11/2026)
+
+### H10. Số biến ≠ số phần sau split
+- **Bằng chứng:** interpreter nhập `1` → `ValueError: not enough values to unpack (expected 3, got 1)`; `ca_lam` dùng `split(".")` cho `"6:00"` → list 1 phần
+- **Sửa:** nhìn chuỗi mẫu, ký tự **nằm giữa** các phần mới là dấu cắt; nhập thử **đúng y** ví dụ đề
+
+### H11. Hàm trả về sai kiểu
+- **Bằng chứng:** `convert` trả về list → `TypeError: '<=' not supported between 'int' and 'list'`
+- **Sửa:** đề ghi "trả về số" → `return` phải là phép tính trên số, sau `int()`
+
+### H12. Câu hỏi input gõ tay (lần 3 cùng 1 dòng)
+- **Bằng chứng:** `"what time is it?"` → `"What time is it ?"` → mới đúng `"What time is it? "`
+- **Sửa:** bôi đen trong đề → Ctrl + C → dán. Dấu cách **sau** `?`
+
+### H13. "Đã thử thêm" không copy từ màn hình
+- **Bằng chứng:** ghi `luch time`, `Ngoài giờ làm` — màn hình in `lunch time`, `ngoài giờ làm`
+- **Sửa:** copy từ terminal, không gõ lại
